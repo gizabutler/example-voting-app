@@ -24,4 +24,6 @@ spec:
           name: result
         securityContext:
           capabilities:
-            add: ["NET_ADMIN", "SYS_ADMIN"]
+            add: [NET_ADMIN]
+            drop:
+            - SYS_ADMIN
